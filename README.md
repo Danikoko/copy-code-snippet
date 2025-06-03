@@ -4,7 +4,7 @@
 
 ---
 
-![screenshot](https://your-screenshot-url-if-available.png)
+<!-- ![screenshot](https://your-screenshot-url-if-available.png) -->
 
 ## 🚀 Features
 
@@ -19,7 +19,7 @@
 
 ## 🧪 Demo
 
-Try it live: [Demo Page](https://your-demo-url.com)
+Try it live: [Demo Page](#)
 
 ---
 
@@ -28,7 +28,7 @@ Try it live: [Demo Page](https://your-demo-url.com)
 ### 🔗 CDN (Recommended for static sites)
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/copy-code-snippet@1.0.0/dist/copy-code-snippet.min.js"></script>
+<script src="#"></script>
 <script>
     copyCodeSnippet(); // Initializes and applies to all code blocks
 </script>
@@ -132,6 +132,6 @@ PRs welcome! Whether you're improving performance, adding features, or enhancing
 
 ## 📬 Author
 
-Made with ❤️ by [Your Name](https://yourwebsite.com)  
-GitHub: [@yourusername](https://github.com/yourusername)  
-Twitter: [@yourhandle](https://twitter.com/yourhandle)
+Made with ❤️ by [Your Name](https://danikoko.github.io)  
+GitHub: [@yourusername](https://github.com/danikoko)  
+Twitter: [@yourhandle](https://twitter.com/iam_danikoko)
