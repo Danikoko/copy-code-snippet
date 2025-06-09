@@ -1,0 +1,34 @@
+{
+    "name": "copy-code-snippet",
+    "version": "1.0.0",
+    "description": "Zero-dependency Javascript utility that automatically adds \"Copy\" buttons to your `<pre><code>` blocks - perfect for blogs, docs, and any site that displays code.",
+    "keywords": [
+        "copy-to-clipboard",
+        "copy-button",
+        "code-snippet",
+        "code-copy",
+        "clipboard",
+        "highlighted-code",
+        "blog-tools"
+    ],
+    "homepage": "https://github.com/Danikoko/copy-code-snippet#readme",
+    "bugs": {
+        "url": "https://github.com/Danikoko/copy-code-snippet/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Danikoko/copy-code-snippet.git"
+    },
+    "license": "MIT",
+    "author": "Danikoko",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.30",
+        "typescript": "^5.8.3",
+        "vitest": "^3.2.0"
+    }
+}
