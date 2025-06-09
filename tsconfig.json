@@ -14,35 +14,3 @@
     "include": ["src/**/*.ts"],
     "exclude": ["node_modules", "dist"]
 }
-
-// {
-//     "compilerOptions": {
-//         "composite": true,
-//         "allowSyntheticDefaultImports": true,
-//         "esModuleInterop": true,
-//         "noImplicitAny": false,
-//         "baseUrl": "./",
-//         "paths": {
-//             "@/*": ["resources/vue/src/*"],
-//             "~/*": ["resources/*"]
-//         },
-//         "target": "ES2020",
-//         "module": "ESNext",
-//         "moduleResolution": "node",
-//         "skipLibCheck": true,
-//         "types": ["vite/client", "vue", "vue-router"]
-//     },
-//     "include": [
-//         "resources/vue/**/*.ts",
-//         "resources/vue/**/*.d.ts",
-//         "resources/vue/**/*.tsx",
-//         "resources/vue/**/*.vue",
-//         "*.vue",
-//         "node_modules/sweetalert2/sweetalert2.d.ts"
-//     ],
-//     "references": [
-//         {
-//             "path": "./tsconfig.node.json"
-//         }
-//     ]
-// }
