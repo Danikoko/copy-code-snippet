@@ -4,8 +4,6 @@
 
 ---
 
-<!-- ![screenshot](https://your-screenshot-url-if-available.png) -->
-
 ## 🚀 Features
 
 -   ✅ Automatically detects and enhances `<pre><code>` blocks
@@ -13,6 +11,7 @@
 -   ✅ “Copied!” feedback with optional timeout
 -   ✅ Works out of the box — no frameworks required
 -   ✅ Fully customizable via options and CSS
+-   ✅ **Built-in default styling**, or use your own styles
 -   ✅ Tiny footprint & browser-compatible
 
 ---
@@ -57,18 +56,23 @@ copyCodeSnippet({
     buttonClassName: 'copy-btn', // CSS class for the button
     copiedText: 'Copied!', // Label after click
     timeout: 2000, // Time in ms before reverting label
-    position: 'top-right', // Button placement: 'top-right', 'top-left'
-    disableDefaultStyle: false, // Enabling default button styling
+    position: 'top-right', // Button placement: 'top-right' or 'top-left'
+    disableDefaultStyle: false, // Inject default styling automatically (true = disable)
 });
 ```
 
-All options are optional — sensible defaults are applied.
+> **Note:** All options are optional — sensible defaults are applied.
 
 ---
 
-## 🎨 Styling
+## 🎨 Styling Options
 
-You can customize the button using your own CSS. Default styling:
+### 1️⃣ Use built-in default style
+
+-   The library will automatically inject a default style block unless you set `disableDefaultStyle: true`.
+-   This allows quick use with no extra CSS required.
+
+Default styling:
 
 ```css
 .copy-btn {
@@ -84,14 +88,51 @@ You can customize the button using your own CSS. Default styling:
     cursor: pointer;
     z-index: 100;
 }
+
 .copy-btn:hover {
     background: #555;
 }
 ```
 
+### 2️⃣ Use your own custom CSS
+
+-   If you want full control over styling:
+
+    -   Set `disableDefaultStyle: true`
+    -   Provide your own styles for `.copy-btn`
+
+Example:
+
+```js
+copyCodeSnippet({
+    disableDefaultStyle: true,
+    buttonClassName: 'my-custom-copy-btn',
+});
+```
+
+```css
+.my-custom-copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.my-custom-copy-btn:hover {
+    background: #0056b3;
+}
+```
+
 ---
 
-## 🧩 Example Markup
+## 🧹 Example Markup
 
 ```html
 <pre>
@@ -135,6 +176,6 @@ PRs welcome! Whether you're improving performance, adding features, or enhancing
 
 ## 📬 Author
 
-Made with ❤️ by [Daniel Enamudu](https://danikoko.github.io)  
-GitHub: [@danikoko](https://github.com/danikoko)  
+Made with ❤️ by [Daniel Enamudu](https://danikoko.github.io)
+GitHub: [@danikoko](https://github.com/danikoko)
 Twitter: [@iam_danikoko](https://twitter.com/iam_danikoko)
