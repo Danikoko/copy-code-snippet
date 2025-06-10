@@ -27,7 +27,7 @@ Try it live: [Demo Page](#)
 ### 🔗 CDN (Recommended for static sites)
 
 ```html
-<script src="#"></script>
+<script src="https://cdn.jsdelivr.net/npm/copy-code-snippet@1.0.2"></script>
 <script>
     copyCodeSnippet(); // Initializes and applies to all code blocks
 </script>
