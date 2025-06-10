@@ -1,14 +1,4 @@
-export interface CopyOptions {
-    selector?: string;
-    buttonText?: string;
-    buttonClassName?: string;
-    copiedText?: string;
-    timeout?: number;
-    position?: 'top-right' | 'top-left';
-    disableDefaultStyle?: boolean;
-}
-
-const defaultCopyOptions: Required<CopyOptions> = {
+const defaultCopyOptions = {
     selector: 'pre code',
     buttonText: 'Copy',
     buttonClassName: 'copy-btn',
@@ -17,7 +7,6 @@ const defaultCopyOptions: Required<CopyOptions> = {
     position: 'top-right',
     disableDefaultStyle: false,
 };
-
 const injectStyles = () => {
     const style = document.createElement('style');
     style.textContent = `
@@ -40,8 +29,7 @@ const injectStyles = () => {
   `;
     document.head.appendChild(style);
 };
-
-const copyCodeSnippet = (copyOptions: CopyOptions = {}) => {
+const copyCodeSnippet = (copyOptions = {}) => {
     const options = { ...defaultCopyOptions, ...copyOptions };
     document.querySelectorAll(options.selector).forEach((block) => {
         const wrapper = block.parentElement;
@@ -55,30 +43,24 @@ const copyCodeSnippet = (copyOptions: CopyOptions = {}) => {
             const button = document.createElement('button');
             button.innerText = options.buttonText;
             button.className = options.buttonClassName;
-
             button.addEventListener('click', () => {
                 const text = block.innerHTML;
                 navigator.clipboard.writeText(text).then(() => {
                     button.innerText = options.copiedText;
-                    setTimeout(
-                        () => (button.innerText = options.buttonText),
-                        options.timeout
-                    );
+                    setTimeout(() => (button.innerText = options.buttonText), options.timeout);
                 });
             });
-
             wrapper.style.position = 'relative';
             button.style.position = 'absolute';
             button.style.top = '8px';
             if (options.position === 'top-left') {
                 button.style.left = '8px';
-            } else {
+            }
+            else {
                 button.style.right = '8px';
             }
-
             wrapper.appendChild(button);
         }
     });
 };
-
 export default copyCodeSnippet;
