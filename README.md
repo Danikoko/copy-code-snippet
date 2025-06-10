@@ -54,10 +54,11 @@ copyCodeSnippet(); // Or pass options
 copyCodeSnippet({
     selector: 'pre code', // CSS selector for code blocks
     buttonText: 'Copy', // Button label before copying
+    buttonClassName: 'copy-btn', // CSS class for the button
     copiedText: 'Copied!', // Label after click
     timeout: 2000, // Time in ms before reverting label
     position: 'top-right', // Button placement: 'top-right', 'top-left'
-    className: 'copy-btn', // CSS class for the button
+    disableDefaultStyle: false, // Enabling default button styling
 });
 ```
 
@@ -93,10 +94,12 @@ You can customize the button using your own CSS. Default styling:
 ## 🧩 Example Markup
 
 ```html
-<pre><code class="language-js">
-  const hello = 'world';
-  console.log(hello);
-</code></pre>
+<pre>
+    <code class="language-js">
+        const hello = 'world';
+        console.log(hello);
+    </code>
+</pre>
 ```
 
 ---
@@ -132,6 +135,6 @@ PRs welcome! Whether you're improving performance, adding features, or enhancing
 
 ## 📬 Author
 
-Made with ❤️ by [Your Name](https://danikoko.github.io)  
-GitHub: [@yourusername](https://github.com/danikoko)  
-Twitter: [@yourhandle](https://twitter.com/iam_danikoko)
+Made with ❤️ by [Daniel Enamudu](https://danikoko.github.io)  
+GitHub: [@danikoko](https://github.com/danikoko)  
+Twitter: [@iam_danikoko](https://twitter.com/iam_danikoko)
