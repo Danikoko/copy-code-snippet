@@ -22,7 +22,7 @@
     "license": "MIT",
     "author": "Danikoko",
     "type": "module",
-    "main": "index.js",
+    "main": "dist/src/index.js",
     "scripts": {
         "test": "vitest",
         "build": "tsc && cp -R src/css dist/src"
