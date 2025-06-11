@@ -1,6 +1,6 @@
 {
     "name": "copy-code-snippet",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Zero-dependency Javascript utility that automatically adds \"Copy\" buttons to your `<pre><code>` blocks - perfect for blogs, docs, and any site that displays code.",
     "keywords": [
         "copy-to-clipboard",
