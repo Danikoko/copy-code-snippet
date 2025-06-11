@@ -22,14 +22,15 @@
     "license": "MIT",
     "author": "Danikoko",
     "type": "module",
-    "main": "dist/src/index.js",
+    "main": "dist/copy-code-snippet.umd.cjs",
     "scripts": {
         "test": "vitest",
-        "build": "tsc && cp -R src/css dist/src"
+        "build": "vite build"
     },
     "devDependencies": {
         "@types/node": "^22.15.30",
         "typescript": "^5.8.3",
+        "vite": "^6.3.5",
         "vitest": "^3.2.0"
     }
 }
