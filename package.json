@@ -1,6 +1,6 @@
 {
     "name": "copy-code-snippet",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Zero-dependency Javascript utility that automatically adds \"Copy\" buttons to your `<pre><code>` blocks - perfect for blogs, docs, and any site that displays code.",
     "keywords": [
         "copy-to-clipboard",
@@ -22,14 +22,15 @@
     "license": "MIT",
     "author": "Danikoko",
     "type": "module",
-    "main": "dist/src/index.js",
+    "main": "dist/copy-code-snippet.umd.cjs",
     "scripts": {
         "test": "vitest",
-        "build": "tsc && cp -R src/css dist/src"
+        "build": "vite build"
     },
     "devDependencies": {
         "@types/node": "^22.15.30",
         "typescript": "^5.8.3",
+        "vite": "^6.3.5",
         "vitest": "^3.2.0"
     }
 }
