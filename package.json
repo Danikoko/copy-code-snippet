@@ -22,7 +22,7 @@
     "license": "MIT",
     "author": "Danikoko",
     "type": "module",
-    "main": "dist/copy-code-snippet.umd.cjs",
+    "main": "dist/copy-code-snippet.umd.js",
     "scripts": {
         "test": "vitest",
         "build": "vite build"
