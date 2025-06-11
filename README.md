@@ -18,7 +18,7 @@
 
 ## 🧪 Demo
 
-Try it live: [Demo Page](https://jsfiddle.net/danikoko/v90e1sh8/9/)
+Try it live: [Demo Page](https://jsfiddle.net/danikoko/v90e1sh8/)
 
 ---
 
